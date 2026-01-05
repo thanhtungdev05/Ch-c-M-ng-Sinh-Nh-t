@@ -1,0 +1,51 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <body>
+    <div id="balloon-container"></div>
+    <div id="howtouseContainer">
+      <div id="howtouse">
+        <a id="txtTittleHTU" class="txtHowtouse"> CÁCH SỬ DỤNG </a>
+        <br>
+        <a id="txtContentHTU" class="txtHowtouse"> Với trang web này, chúng tôi sẽ tổ chức một buổi sinh nhật trực tuyến cho bạn. <br> Chúng tôi cung cấp bánh kem, nến theo độ tuổi của bạn, hát bài hát sinh nhật, <br> và ghi lại lời chúc của bạn trong Thư viện Lời Chúc. <br> Để bắt đầu buổi lễ này, chỉ cần nhập tên và tuổi của bạn vào các ô trên, <br> sau đó nhấn vào nút "BẮT ĐẦU BUỔI TIỆC". </a>
+        <br>
+        <button id="btnClsHowtouse" class="btnCake" onclick="clsHowtouse()"> ĐÓNG </button>
+      </div>
+    </div>
+    <div id="container">
+      <h1 id="txtBirthday"> Birthday </h1>
+      <h1 id="txtOnline"> ONLINE </h1>
+      <a id="credit"> Chúc Mừng Sinh Nhật Bạn </a>
+      <div id="age">
+        <a id="txtIm" class="txtimyearsold"> My name's </a>
+        <input type="text" id="inpName" min="1" max="99" placeholder="Nguyễn Văn A" required autofocus>
+        <a id="txtIm" class="txtimyearsold">. Today, I'm </a>
+        <br>
+        <input type="number" id="inpYears" min="1" max="99" placeholder="19" required autofocus>
+      </div>
+      <div id="topCake" class="cakeContainer">
+        <div id="candleContainer">
+          <div id="candle">
+            <div id="light"></div>
+          </div>
+        </div>
+        <button id="pinkCake" class="btnCake" onclick="openHowtouse()">
+          <a class="txtBtnCake"> Cách Sử Dụng </a>
+        </button>
+      </div>
+      <div id="botCake" class="cakeContainer">
+        <button id="orangeCake" class="btnCake" onclick="openWishGallery()">
+          <a class="txtBtnCake"> Ước Mơ Của Bạn </a>
+        </button>
+      </div>
+      <div id="botCake" class="cakeContainer">
+        <div id="starsContainer"></div>
+        <button id="redCake" class="btnCake" onclick="appendStars()">
+          <a class="txtBtnCake"> Bắt Đầu Buổi Tiệc </a>
+        </button>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

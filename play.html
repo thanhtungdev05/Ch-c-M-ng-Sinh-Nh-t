@@ -1,0 +1,70 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/play.css">
+  <body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import {
+        initializeApp
+      } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+      import {
+        getAnalytics
+      } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyApp1U3mCbXoWkxOlyWxGrFc6KtCK3Rczc",
+        authDomain: "birthdayonline.firebaseapp.com",
+        projectId: "birthdayonline",
+        storageBucket: "birthdayonline.appspot.com",
+        messagingSenderId: "967800040368",
+        appId: "1:967800040368:web:11863466e5904fa8154475",
+        measurementId: "G-Q7S3ECGMZF"
+      };
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <div id="tittle">
+      <h1 id="txtBirthday"> Birthday </h1>
+      <h1 id="txtOnline"> ONLINE </h1>
+      <a id="credit"> BẠN HÃY CHỌN CHIẾC BÁNH KEM BẠN THÍCH </a>
+    </div>
+    <div id="wishContainer">
+      <div id="message">
+        <a class="wishTittle"> Chúc Mừng Sinh Nhật! </a>
+        <br>
+        <a class="messageContent">Chúc bạn có một ngày tràn đầy niềm vui, tiếng cười và tất cả những điều mang lại hạnh phúc cho bạn. <br>Chúc bạn một ngày tuyệt vời và một năm phía trước còn tuyệt vời hơn nữa! </a>
+        <br>
+        <a class="endMessage">Những lời chúc ấm áp nhất từ ______ :></a>
+      </div>
+      <hr>
+      <div id="wish">
+        <a class="wishTittle">Trước khi thổi nến, bạn có thể viết điều ước của mình vào hộp bên dưới</a>
+        <br>
+        <textarea id="wishContent" placeholder="Write your wish here..."></textarea>
+        <br>
+        <button id="btnWish" class="btnControl" onclick="blowCandle()">Thổi nến</button>
+      </div>
+    </div>
+    <div id="partyContainer">
+      <div id="candleContainer"></div>
+    </div>
+    <div id="cakeContainer"></div>
+    <div id="controlContainer">
+      <button id="btnChange" class="btnControl" onclick="changeCake()"> Đổi bánh</button>
+      <button id="btnStart" class="btnControl" onclick="startParty()"> Bắt đầu bữa tiệc</button>
+    </div>
+    <div id="wishGallery">
+      <button id="btnWishGallery" class="btnControl" onclick="openWishGallery()"> Thư viện Ước muốn</button>
+    </div>
+    <div id="backContainer">
+      <button id="btnBack" class="btnControl" onclick="window.location.href='index.html'"> Quay lại trang chủ</button>
+    </div>
+    <script type="module" src="js/sendWish.js"></script>
+    <script src="js/play.js"></script>
+  </body>
+</html>
